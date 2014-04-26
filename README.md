@@ -2,6 +2,14 @@
 
 Simple and easy to use presentation layer for your Rails models.
 
+[![Build Status](https://travis-ci.org/Azdaroth/decent_presenter.svg?branch=master)](https://travis-ci.org/Azdaroth/decent_presenter)
+
+[![Gem Version](https://badge.fury.io/rb/decent_presenter.svg)](http://badge.fury.io/rb/decent_presenter)
+
+[![Coverage Status](https://coveralls.io/repos/Azdaroth/decent_presenter/badge.png?branch=master)](https://coveralls.io/r/Azdaroth/decent_presenter?branch=master)
+
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
