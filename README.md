@@ -46,7 +46,7 @@ To decorate your model (e.g. user) just use:
 
 Works the same way with collections:
 
-`` ruby
+``` ruby
 @users = present(User.all)
 ```
 
@@ -60,13 +60,13 @@ end
 
 If you want other presenter, use with option:
 
-`` ruby
+``` ruby
 @user = present(User.find(params[:id]), with: OtherUserPresenter)
 ```
 
 or
 
-`` ruby
+``` ruby
 @users = present(User.all, with: OtherUserPresenter)
 ```
 
