@@ -40,7 +40,7 @@ and you can start using DecentPresenters!
 
 To decorate your model (e.g. user) just use:
 
-`` ruby
+``` ruby
 @user = present(User.find(params[:id]))
 ```
 
