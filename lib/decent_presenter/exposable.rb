@@ -4,7 +4,7 @@ module DecentPresenter
   module Exposable
  
     def present(presentable, options = {})
-      if respond_to? :view_context
+      if respond_to? :view_context, true
         DecentPresenter::Exposure.new(
           view_context, DecentPresenter::Factory
         ).present(presentable, options)

@@ -7,11 +7,11 @@ module DecentPresenter
 
     attr_reader :view_context
     private :view_context
-    
+
     def initialize(object, view_context)
       super(object)
       @view_context = view_context
-    end
+    end    
 
     def model
       __getobj__
@@ -24,6 +24,7 @@ module DecentPresenter
     end
 
     alias :h :helpers    
+
 
   end
 end

@@ -22,6 +22,10 @@ class DummyModelForExposableOtherPresenter < DecentPresenter::Base
     "other presented name"
   end
 
+  def name_from_default_presenter
+    present(model).name
+  end
+
 end
 
 class DummyObjectErrorPresenterExposable
@@ -48,7 +52,6 @@ class DummyObjectPresenterExposable
   def present_model_with_options(model, options)
     present(model, options)
   end
-
 
   def present_collection(collection)
     present(collection)
@@ -116,6 +119,15 @@ describe DecentPresenter::Exposable do
       ).to eq "other presented name"
     end
 
+    it "handles presentation within presenters" do
+      expect(subject.present_model_with_options(
+          model,
+          with: DummyModelForExposableOtherPresenter
+        ).name_from_default_presenter
+      ).to eq "presented name"
+    end
+
   end
+
 
 end
